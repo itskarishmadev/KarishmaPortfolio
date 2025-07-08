@@ -1,5 +1,8 @@
 import { useRouter } from "next/router";
 import React, { use, useEffect, useState } from "react";
+import { FaBed, FaCode, FaIcicles, FaUtensils, FaUtensilSpoon } from "react-icons/fa";
+import { RepeatIcon } from "./icons";
+import { FaRepeat, FaS } from "react-icons/fa6";
 
 const RotatingCircle = ({ onHireClick }: any) => {
     const [angle, setAngle] = useState(0);
@@ -21,7 +24,7 @@ const RotatingCircle = ({ onHireClick }: any) => {
             </p>
 
             {/* Rotating Circle */}
-            <div className="relative w-72 h-72 rounded-full bg-black border border-gray-700 shadow-[0_0_60px_10px_rgba(0,255,0,0.3)] overflow-hidden">
+            <div className="relative w-[400px] h-[400px] rounded-full bg-black border border-gray-700 shadow-[0_0_60px_10px_rgba(0,255,0,0.3)] overflow-hidden">
                 {/* Icons Wrapper - Rotated via React state */}
                 <div
                     className="absolute inset-0 transition-transform duration-[50ms] ease-linear"
@@ -29,26 +32,39 @@ const RotatingCircle = ({ onHireClick }: any) => {
                 >
                     {/* REPEAT */}
                     <div className="absolute top-2 left-1/2 -translate-x-1/2 text-center">
-                        {/* <Repeat className="text-green-400 mx-auto" size={20} /> */}
-                        <p className="text-xs font-semibold">REPEAT</p>
+                        <span className="flex flex-col justify-center items-center gap-2">
+                            <FaRepeat color="green" />
+                            <p className="text-xs font-semibold">REPEAT</p>
+                        </span>
+
                     </div>
 
                     {/* SLEEP */}
                     <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-center">
-                        {/* <Bed className="text-green-400 mx-auto" size={20} /> */}
-                        <p className="text-xs font-semibold">SLEEP</p>
+                        <span className="flex flex-col justify-center items-center gap-2">
+                            <FaBed color="green" />
+                            <p className="text-xs font-semibold">SLEEP</p>
+
+                        </span>
+
                     </div>
 
                     {/* CODE */}
                     <div className="absolute left-2 top-1/2 -translate-y-1/2 text-center">
-                        {/* <Laptop className="text-green-400 mx-auto" size={20} /> */}
-                        <p className="text-xs font-semibold">CODE</p>
+                        <span className="flex flex-col justify-center items-center gap-2"> <FaCode color="green" />
+                            <p className="text-xs font-semibold">CODE</p></span>
+
+
                     </div>
 
                     {/* EAT */}
                     <div className="absolute right-2 top-1/2 -translate-y-1/2 text-center">
-                        {/* <UtensilsCrossed className="text-green-400 mx-auto" size={20} /> */}
-                        <p className="text-xs font-semibold">EAT</p>
+                        <span className="flex flex-col justify-center items-center gap-2">
+                            <FaUtensils color="green" />
+                            <p className="text-xs font-semibold">EAT</p>
+                        </span>
+
+
                     </div>
                 </div>
 
@@ -56,7 +72,8 @@ const RotatingCircle = ({ onHireClick }: any) => {
                 <div className="absolute inset-0 flex items-center justify-center z-10">
                     <button className="bg-green-500 text-black font-semibold px-6 py-2 rounded-md hover:bg-green-600 transition"
                         onClick={() => {
-                            onHireClick()
+                            const section = document.getElementById("contact");
+                            section?.scrollIntoView({ behavior: "smooth" });
 
                         }}>
                         {/* <Briefcase className="inline-block mr-2" size={18} /> */}

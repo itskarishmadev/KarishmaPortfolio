@@ -16,7 +16,7 @@ const ContactForm = () => {
                                 <input
                                     type="text"
                                     placeholder="Your Name"
-                                    className="w-full px-4 py-2 bg-[#1a1e27] text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                                    className="w-full px-4 py-2 bg-[#1a1e27] relative z-50 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
                                 />
                             </div>
 
@@ -25,7 +25,7 @@ const ContactForm = () => {
                                 <input
                                     type="email"
                                     placeholder="Your Email"
-                                    className="w-full px-4 py-2 bg-[#1a1e27] text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                                    className="w-full px-4 py-2 bg-[#1a1e27] relative z-50 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
                                 />
                             </div>
 
@@ -34,7 +34,7 @@ const ContactForm = () => {
                                 <textarea
                                     rows={4}
                                     placeholder="Your Message"
-                                    className="w-full px-4 py-2 bg-[#1a1e27] text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                                    className="w-full px-4 py-2 bg-[#1a1e27] relative z-50 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
                                 ></textarea>
                             </div>
 

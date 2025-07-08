@@ -1,23 +1,24 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
+import RotatingCircle from "../common/rotatingWheel";
 
 const projects = [
   {
-    title: "Taskify App",
+    title: "EdTech Platform",
     // icon: <FaTasks className="text-green-400 inline-block mr-2" />,
     description:
       "A task management app with real-time collaboration, built using React, Node.js, and MongoDB.",
     image: "/pic.png", // Replace with your image path
-    tags: ["React", "Node.js", "MongoDB"],
+    tags: ["React", "Nextjs", "TypeScript", "TailwindCSS"],
     github: "#",
     demo: "#",
   },
   {
-    title: "E-Shop Platform",
+    title: "Aroma Cooking Assistant (UI Development)",
     // icon: <FaShoppingCart className="text-green-400 inline-block mr-2" />,
     description:
       "A scalable e-commerce platform with Next.js, Stripe payments, and TailwindCSS.",
     image: "/pic.png",
-    tags: ["Next.js", "Stripe", "TailwindCSS"],
+    tags: ["React", "Nextjs", "TypeScript", "TailwindCSS"],
     github: "#",
     demo: "#",
   },
@@ -27,7 +28,7 @@ const projects = [
     description:
       "My personal portfolio showcasing my work, built with HTML, TailwindCSS, and Alpine.js.",
     image: "/pic.png",
-    tags: ["HTML", "TailwindCSS", "Alpine.js"],
+    tags: ["React", "Nextjs", "TypeScript", "TailwindCSS"],
     github: "#",
     demo: "#",
   },
@@ -35,7 +36,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="bg-[#0d1117] text-white py-16 px-6 md:px-20" id="projects">
+    <section className="bg-[black] text-white py-16 px-6 md:px-20" id="projects">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-3xl font-bold mb-2">
           <span className="text-white">Latest</span>{" "}
@@ -87,6 +88,7 @@ const ProjectsSection = () => {
           </div>
         ))}
       </div>
+
     </section>
   );
 }
