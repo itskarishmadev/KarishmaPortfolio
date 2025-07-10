@@ -1,5 +1,5 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
-import RotatingCircle from "../common/rotatingWheel";
+import Image from "next/image";
 
 const projects = [
   {
@@ -53,9 +53,11 @@ const ProjectsSection = () => {
             key={index}
             className="bg-[#111827] border border-gray-700 rounded-lg p-4 shadow-md hover:shadow-green-500/30 transition"
           >
-            <img
+            <Image
               src={project.image}
               alt={project.title}
+              width={500}
+              height={500}
               className="rounded-md mb-4"
             />
 

@@ -15,6 +15,17 @@ export default function Header() {
           <li>
             <button
               onClick={() => {
+                const section = document.getElementById("about");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="text-white"
+            >
+              About
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => {
                 const section = document.getElementById("projects");
                 section?.scrollIntoView({ behavior: "smooth" });
               }}

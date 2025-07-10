@@ -1,7 +1,37 @@
-import { FaUserAlt, FaCodeBranch } from "react-icons/fa";
+import { useEffect, useRef } from "react";
+import { FaUserAlt } from "react-icons/fa";
 import { FaCode } from "react-icons/fa6";
 
 const About = () => {
+
+  const fadeRefs = useRef<HTMLDivElement[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            entry.target.classList.remove("opacity-0", "translate-y-10");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    fadeRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const addToRefs = (el: HTMLDivElement) => {
+    if (el && !fadeRefs.current.includes(el)) {
+      fadeRefs.current.push(el);
+    }
+  };
   return (
     <section id="about" className="bg-[#050e1b] text-white px-6 py-16 md:px-20">
       <div className="text-center mb-12">
@@ -28,11 +58,11 @@ const About = () => {
             with Tailwind CSS. Strong focus on performance, SEO, and clean, maintainable code.
           </p>
           <p className="text-gray-400 mb-6">
-            When I'm not coding, I spend time learning new concepts, sharpening my problem-solving skills, or reading about emerging trends in tech.
+            When I&apos;m not coding, I spend time learning new concepts, sharpening my problem-solving skills, or reading about emerging trends in tech.
           </p>
 
-          <div className="grid grid-cols-3 gap-4">
-            <div className="bg-black/40 p-4 rounded-lg text-center">
+          <div className="grid grid-cols-3 gap-4 opacity-0 translate-y-10 transition-all duration-1000 ease-out " ref={addToRefs}>
+            <div className="bg-black/40 p-4 rounded-lg text-center ">
               <p className="text-green-400 text-2xl font-bold">8</p>
               <p className="text-sm text-gray-400">Repositories</p>
             </div>
@@ -64,15 +94,13 @@ const About = () => {
           </div>
 
           {/* Tech Badges */}
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 opacity-0 translate-y-10 transition-all duration-1000 ease-out" ref={addToRefs}>
             {[
               "JavaScript",
               "React",
-              "Node.js",
+              "Next.js",
               "TypeScript",
               "TailwindCSS",
-              "Python",
-              "Docker",
               "Git",
             ].map((tech, i) => (
               <span
@@ -90,7 +118,7 @@ const About = () => {
 }
 
 // Sub-component for skill bar
-function SkillBar({ label, percent }: any) {
+function SkillBar({ label, percent }: { label: string, percent: number }) {
   return (
     <div>
       <div className="flex justify-between mb-1">

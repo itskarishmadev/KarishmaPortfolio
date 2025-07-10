@@ -1,17 +1,19 @@
-import React from 'react'
+
 
 const Intro = () => {
+
+
     return (
         <div>
 
-            <div className="bg-[url('/pattern-code.png')] inset-0 opacity-[0.03] absolute" />
+            <div className="bg-[url('/pattern-code.png')] inset-0 opacity-[0.03] absolute " />
             <div className="w-full text-center space-y-6 xl:pt-8  p-6">
                 <div className="space-y-2">
                     <h1
                         className="text-green-500 text-xl md:text-2xl font-semibold"
                         x-data="{ visible: false }"
                     >
-                        Hello World! I'm
+                        Hello World! I&apos;m
                     </h1>
                     <h1 className="text-3xl lg:text-4xl font-bold font-code tracking-tight text-white animated fadeInUp delay100">
                         Karishma Pandiamannan
@@ -50,29 +52,31 @@ const Intro = () => {
                         <div className="flex-1 p-4 bg-gray-700 relative">
                             {/* <!-- Terminal Window --> */}
                             <div className="absolute inset-2 bg-black rounded border border-gray-700 flex ioajsklehsnm mklausjenrhtm">
-                                <div className="bg-gray-800 p-1 flex layhetgsjdcb gap-1">
-                                    <div className="flex gap-1 ml-1">
+                                <div className="bg-gray-800 p-1 flex layhetgsjdcb gap-1 ">
+                                    <div className="flex gap-1 ">
                                         <div className="w-2 h-2 bg-red-500 boalstehwqbj"></div>
                                         <div className="w-2 h-2 bg-yellow-500 boalstehwqbj"></div>
                                         <div className="w-2 h-2 bg-green-500 boalstehwqbj"></div>
                                     </div>
-                                    <div className="text-[10px] sm:text-xs text-gray-400 mx-auto font-code">
-                                        john@dev-workspace
+                                    <div className="text-[10px] sm:text-xs text-gray-400 font-code">
+                                        karishmadev-workspace
                                     </div>
                                 </div>
-                                <div className="p-2 flex-1 font-code text-xs lg:text-sm">
-                                    <pre className="text-green-500 mt-1 flex flex-col">          _____
-                                        /     \    <span className="text-yellow-400">john@dev-workspace</span>
-                                        | () () |   <span className="text-gray-400">------------------</span>
-                                        \  ^  /    <span className="text-purple-400">OS:</span> <span data-typing="1" className="text-gray-300">DevOS v4.2.0</span>
-                                        |||||     <span className="text-purple-400">Host:</span> <span data-typing="2" className="text-gray-300">ThinkPad X1 Carbon</span>
-                                        |||||     <span className="text-purple-400">Kernel:</span> <span data-typing="3" className="text-gray-300">5.15.0-dev</span>
-                                        <span className="text-purple-400">Uptime:</span> <span data-typing="4" className="text-gray-300">45 days, 17 hours</span>
-                                        <span className="text-purple-400">Languages:</span> <span data-typing="5" className="text-gray-300">JavaScript, Python, Go</span>
-                                        <span className="text-purple-400">Editor:</span> <span data-typing="6" className="text-gray-300">VSCode / Neovim</span>
-                                        <span className="text-purple-400">Frameworks:</span> <span data-typing="7" className="text-gray-300">React, Next.js, TailwindCSS</span>
+                                <div className="p-2 flex-1 font-mono text-xs lg:text-sm overflow-hidden whitespace-pre">
+                                    <pre className="text-green-500 leading-relaxed">
+                                        {`          _____                      ${'john@dev-workspace'}
+         /     \\    `}<span className="text-yellow-400">john@dev-workspace</span>{`
+        | () () |   `}<span className="text-gray-400">------------------</span>{`
+         \\  ^  /    `}<span className="text-purple-400">OS:</span> <span className="text-gray-300">DevOS v4.2.0</span>{`
+          |||||     `}<span className="text-purple-400">Host:</span> <span className="text-gray-300">ThinkPad X1 Carbon</span>{`
+          |||||     `}<span className="text-purple-400">Kernel:</span> <span className="text-gray-300">5.15.0-dev</span>{`
+                   `}<span className="text-purple-400">Uptime:</span> <span className="text-gray-300">45 days, 17 hours</span>{`
+                   `}<span className="text-purple-400">Languages:</span> <span className="text-gray-300">JavaScript, Python, Go</span>{`
+                   `}<span className="text-purple-400">Editor:</span> <span className="text-gray-300">VSCode / Neovim</span>{`
+                   `}<span className="text-purple-400">Frameworks:</span> <span className="text-gray-300">React, Next.js, TailwindCSS</span>
                                     </pre>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -104,7 +108,7 @@ const Intro = () => {
                                         <span className="text-purple-400">import</span>{" "}
                                         <span className="text-blue-400">React</span>{" "}
                                         <span className="text-purple-400">from</span>{" "}
-                                        <span className="text-green-400">'react'</span>;
+                                        <span className="text-green-400">&apos;react&apos;</span>;
                                         {/* <span className="text-purple-400">const</span> <span className="text-yellow-400">DevWorkspace</span> = () =&gt; {
   <span className="text-purple-400">const</span> [<span className="text-blue-400">isLoading</span>, <span className="text-blue-400">setIsLoading</span>] = <span className="text-yellow-400">React</span>.<span className="text-blue-400">useState</span>(<span className="text-orange-400">true</span>);
   
@@ -156,9 +160,9 @@ const Intro = () => {
                         </div>
                         <div className="absolute w-6 h-1 bg-white/20 boalstehwqbj left-3 top-3"></div>
                         {/* <!-- Steam Elements --> */}
-                        <div className="absolute w-1.5 h-4 bg-white bg-opacity-30 boalstehwqbj left-4 -top-2 steam steam1"></div>
-                        <div className="absolute w-1.5 h-4 bg-white bg-opacity-30 boalstehwqbj left-6 -top-4 steam steam2"></div>
-                        <div className="absolute w-1.5 h-4 bg-white bg-opacity-30 boalstehwqbj left-8 -top-3 steam steam3"></div>
+                        <div className="absolute w-1.5 h-4 bg-white bg-opacity-30 boalstehwqbj left-4 -top-2 steam steam1 rounded-xl"></div>
+                        <div className="absolute w-1.5 h-4 bg-white bg-opacity-30 boalstehwqbj left-6 -top-4 steam steam2 rounded-xl"></div>
+                        <div className="absolute w-1.5 h-4 bg-white bg-opacity-30 boalstehwqbj left-8 -top-3 steam steam3 rounded-xl"></div>
                         <div className="absolute left-2 bottom-3 text-[8px] tracking-widest">
                             COFFEE
                         </div>

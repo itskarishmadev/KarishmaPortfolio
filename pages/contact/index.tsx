@@ -8,7 +8,7 @@ interface Props {
     query: Query;
 }
 
-const ContactPage = (props: Props) => {
+const ContactPage = () => {
     return < ContactForm />;
 };
 ContactPage.getInitialProps = ({ query }: Props) => {
