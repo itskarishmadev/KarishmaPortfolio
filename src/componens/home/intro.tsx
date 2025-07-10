@@ -5,10 +5,9 @@ const Intro = () => {
 
     return (
         <div>
-
-            <div className="bg-[url('/pattern-code.png')] inset-0 opacity-[0.03] absolute " />
+            <div className="bg-[url('/pattern-code.png')] inset-0 opacity-[0.03] absolute pointer-events-none " />
             <div className="w-full text-center space-y-6 xl:pt-8  p-6">
-                <div className="space-y-2">
+                <div className="space-y-2 mt-20">
                     <h1
                         className="text-green-500 text-xl md:text-2xl font-semibold"
                         x-data="{ visible: false }"
@@ -24,13 +23,21 @@ const Intro = () => {
                     innovative thinking. Welcome to my personal dev workspace where ideas
                     come to life.
                 </p>
-                <div className="flex flex-wrap justify-center gap-6 ">
-                    <button className="py-3 px-5 bg-green-500 hover:bg-green-600 text-gray-900 font-bold rounded-lg transition-all flex gap-2 animated fadeInUp delay500"
-
+                <div className="flex flex-wrap justify-center gap-6  ">
+                    <button className="py-3 px-5 bg-green-500 cursor-pointer hover:bg-green-600 text-gray-900 font-bold rounded-lg transition-all flex gap-2 animated fadeInUp delay500"
+                        onClick={() => {
+                            const Elements = document.getElementById("projects");
+                            Elements?.scrollIntoView({ behavior: "smooth" })
+                        }}
                     >
                         {"</>"}&nbsp;&nbsp;View Projects
                     </button>
-                    <button className="py-3 px-5 cursor-pointer border-green-600 border hover:bg-green-600 text-green-600 font-bold rounded-lg transition-all flex gap-2 animated fadeInUp delay500" >
+                    <button className="py-3 px-5 cursor-pointer border-green-600 border text-green-600 font-bold rounded-lg transition-all flex gap-2 animated fadeInUp delay500"
+                        onClick={() => {
+                            const section = document.getElementById("contact");
+                            section?.scrollIntoView({ behavior: "smooth" });
+                        }}
+                    >
                         {"</>"}&nbsp;&nbsp;Contact Me
                     </button>
                 </div>
