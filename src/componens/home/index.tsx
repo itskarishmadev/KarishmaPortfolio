@@ -9,7 +9,7 @@ import RotatingCircle from "../common/rotatingWheel";
 
 const HomeContainer = () => {
   return (
-    <div className="min-h-screen w-full relative overflow-x-hidden">
+    <div className="min-h-screen w-full overflow-x-hidden">
       <Intro />
       <InfiniteSkillsSlider />
       <About />
