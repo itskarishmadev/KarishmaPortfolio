@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Portfolio Site",
     description:
-      "My personal portfolio showcasing my work, built with HTML, TailwindCSS, and Alpine.js.",
+      "My personal portfolio showcasing my work, built with React, TailwindCSS, and Next.js.",
     image: "/pic2.png",
     tags: ["React", "Nextjs", "TypeScript", "TailwindCSS"],
     github: "#",
@@ -50,7 +50,7 @@ const ProjectsSection = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-[#111827] border border-gray-700 rounded-lg p-4 shadow-md hover:shadow-green-500/30 transition duration-300"
+            className="bg-[#111827] border border-gray-700 rounded-lg p-4 shadow-xl hover:shadow-green-500/30 transition duration-300"
           >
             <div className="relative w-full h-52 md:h-56 lg:h-64 mb-4">
               <Image
