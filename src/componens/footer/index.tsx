@@ -23,10 +23,10 @@ const Footer = () => {
                         Building the future with clean code, creativity, and a passion for innovation.
                     </p>
                     <div className="flex gap-4 mt-4 text-xl text-gray-400">
-                        <a href="#" className="hover:text-green-500">
+                        <a href="https://github.com/itskarishmadev" className="hover:text-green-500">
                             <FaGithub />
                         </a>
-                        <a href="#" className="hover:text-green-500">
+                        <a href="https://www.linkedin.com/in/itskarishmamannan/" className="hover:text-green-500">
                             <FaLinkedin />
                         </a>
 
