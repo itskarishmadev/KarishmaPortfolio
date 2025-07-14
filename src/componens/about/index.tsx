@@ -64,15 +64,15 @@ const About = () => {
           <div className="grid grid-cols-3 gap-4 opacity-0 translate-y-10 transition-all duration-1000 ease-out " ref={addToRefs}>
             <div className="bg-black/40 p-4 rounded-lg text-center ">
               <p className="text-green-400 text-2xl font-bold">8</p>
-              <p className="text-sm text-gray-400">Repositories</p>
+              <p className="xs:text-[9px] lg:text-sm text-gray-400">Repositories</p>
             </div>
             <div className="bg-black/40 p-4 rounded-lg text-center">
               <p className="text-green-400 text-2xl font-bold">1k</p>
-              <p className="text-sm text-gray-400">Commits</p>
+              <p className="xs:text-[9px] lg:text-sm text-gray-400">Commits</p>
             </div>
             <div className="bg-black/40 p-4 rounded-lg text-center">
               <p className="text-green-400 text-2xl font-bold">0</p>
-              <p className="text-sm text-gray-400">PRs Merged</p>
+              <p className="xs:text-[9px] lg:text-sm text-gray-400">PRs Merged</p>
             </div>
           </div>
         </div>
