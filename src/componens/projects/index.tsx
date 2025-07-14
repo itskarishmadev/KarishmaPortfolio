@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
 
@@ -40,8 +42,8 @@ const ProjectsSection = () => {
           <span className="text-green-500">Projects</span>
         </h2>
         <p className="text-gray-400 max-w-xl mx-auto text-sm md:text-base">
-          A collection of my recent work, showcasing innovative solutions and clean code.
-          Click to explore details.
+          A collection of my recent work, showcasing innovative solutions and
+          clean code. Click to explore details.
         </p>
       </div>
 
@@ -53,10 +55,9 @@ const ProjectsSection = () => {
             className="bg-[#111827] border border-gray-700 rounded-lg p-4 shadow-md hover:shadow-green-500/30 transition duration-300"
           >
             <div className="relative w-full h-52 md:h-56 lg:h-64 mb-4">
-              <Image
+              <img
                 src={project.image}
                 alt={project.title}
-                fill
                 className="object-cover rounded-md"
               />
             </div>
