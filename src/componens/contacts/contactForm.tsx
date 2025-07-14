@@ -70,10 +70,10 @@ const ContactForm = () => {
 
                         <h3 className="text-md font-bold mb-2">Connect with Me</h3>
                         <div className="flex items-center gap-4 text-2xl">
-                            <a href="#" target="_blank" className="hover:text-green-400">
+                            <a href="https://github.com/itskarishmadev" target="_blank" className="hover:text-green-400">
                                 <FaGithub />
                             </a>
-                            <a href="#" target="_blank" className="hover:text-green-400">
+                            <a href="https://www.linkedin.com/in/itskarishmamannan/" target="_blank" className="hover:text-green-400">
                                 <FaLinkedin />
                             </a>
 
