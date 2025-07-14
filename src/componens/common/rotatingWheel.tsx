@@ -8,8 +8,8 @@ const RotatingCircle = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setAngle((prev) => (prev + 1) % 360);
-        }, 50); // rotate 1° every 50ms (adjust for speed)
+            setAngle((prev) => (prev + 45));
+        }, 2000); // rotate 1° every 50ms (adjust for speed)
         return () => clearInterval(interval);
     }, []);
     return (
@@ -24,50 +24,50 @@ const RotatingCircle = () => {
 
             {/* Rotating Circle */}
             <div className="relative  xs:w-[300px] xs:h-[300px] sm:w-[400px] sm:h-[400px] rounded-full bg-black border border-gray-700 shadow-[0_0_60px_10px_rgba(0,255,0,0.3)] overflow-hidden">
-                {/* Icons Wrapper - Rotated via React state */}
+
                 <div
-                    className="absolute  inset-0 transition-transform duration-[50ms] ease-linear"
+                    className="absolute  inset-0 transition-transform duration-[2000ms] ease-linear "
                     style={{ transform: `rotate(${angle}deg)` }}
                 >
                     {/* REPEAT */}
-                    <div className="absolute top-2 left-1/2 -translate-x-1/2 text-center">
+                    <div className="absolute top-6 left-1/2 -translate-x-1/2 text-center">
                         <span className="flex flex-col justify-center items-center gap-2">
-                            <FaRepeat color="green" />
-                            <p className="text-xs font-semibold">REPEAT</p>
+                            <FaRepeat color="green" size={20} />
+                            <p className="text-sm  font-semibold">REPEAT</p>
                         </span>
 
                     </div>
 
                     {/* SLEEP */}
-                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-center">
+                    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-center">
                         <span className="flex flex-col justify-center items-center gap-2">
-                            <FaBed color="green" />
-                            <p className="text-xs font-semibold">SLEEP</p>
+                            <FaBed color="green" size={30} />
+                            <p className="text-sm  font-semibold">SLEEP</p>
 
                         </span>
 
                     </div>
 
                     {/* CODE */}
-                    <div className="absolute left-2 top-1/2 -translate-y-1/2 text-center">
-                        <span className="flex flex-col justify-center items-center gap-2"> <FaCode color="green" />
-                            <p className="text-xs font-semibold">CODE</p></span>
+                    <div className="absolute left-6 top-1/2 -translate-y-1/2 text-center">
+                        <span className="flex flex-col justify-center items-center gap-2"> <FaCode color="green" size={30} />
+                            <p className="text-sm font-semibold">CODE</p></span>
 
 
                     </div>
 
                     {/* EAT */}
-                    <div className="absolute right-2 top-1/2 -translate-y-1/2 text-center">
+                    <div className="absolute right-6 top-1/2 -translate-y-1/2 text-center">
                         <span className="flex flex-col justify-center items-center gap-2">
-                            <FaUtensils color="green" />
-                            <p className="text-xs font-semibold">EAT</p>
+                            <FaUtensils color="green" size={30} />
+                            <p className="text-sm font-semibold">EAT</p>
                         </span>
 
 
                     </div>
                 </div>
 
-                {/* Static Hire Me Button */}
+                {/*  Hire Me Button */}
                 <div className="absolute inset-0 flex items-center justify-center z-10">
                     <button className="bg-green-500 text-black font-semibold px-6 py-2 rounded-md hover:bg-green-600 transition"
                         onClick={() => {
