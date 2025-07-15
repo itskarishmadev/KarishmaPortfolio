@@ -8,7 +8,7 @@ const projects = [
     title: "EdTech Platform",
     description:
       "A task management app with real-time collaboration, built using React, Node.js, and MongoDB.",
-    image: "/pic2.png",
+    image: "/mynervapic.png",
     tags: ["React", "Nextjs", "TypeScript", "TailwindCSS"],
     github: "#",
     demo: "#",
@@ -17,7 +17,7 @@ const projects = [
     title: "Aroma Cooking Assistant (UI Development)",
     description:
       "A scalable e-commerce platform with Next.js, Stripe payments, and TailwindCSS.",
-    image: "/pic2.png",
+    image: "/aromapic.png",
     tags: ["React", "Nextjs", "TypeScript", "TailwindCSS"],
     github: "#",
     demo: "#",
@@ -26,7 +26,7 @@ const projects = [
     title: "Portfolio Site",
     description:
       "My personal portfolio showcasing my work, built with React, TailwindCSS, and Next.js.",
-    image: "/pic2.png",
+    image: "/portfoliopic.png",
     tags: ["React", "Nextjs", "TypeScript", "TailwindCSS"],
     github: "#",
     demo: "#",
@@ -58,7 +58,7 @@ const ProjectsSection = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="object-cover rounded-md"
+                className="object-cover rounded-md h-full w-full"
               />
             </div>
 
