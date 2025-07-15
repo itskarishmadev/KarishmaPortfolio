@@ -7,7 +7,7 @@ const projects = [
   {
     title: "EdTech Platform",
     description:
-      "A task management app with real-time collaboration, built using React, Node.js, and MongoDB.",
+      "An interactive e-learning platform with flexible courses, live tutor chats, and quizzes, plus community features like posts, comments, and likes for collaboration.",
     image: "/mynervapic.png",
     tags: ["React", "Nextjs", "TypeScript", "TailwindCSS"],
     github: "#",
@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Aroma Cooking Assistant (UI Development)",
     description:
-      "A scalable e-commerce platform with Next.js, Stripe payments, and TailwindCSS.",
+      "Developed a responsive UI for Aroma, Emphasized clean design, smooth UX, and seamless user interactions.",
     image: "/aromapic.png",
     tags: ["React", "Nextjs", "TypeScript", "TailwindCSS"],
     github: "#",
@@ -25,7 +25,7 @@ const projects = [
   {
     title: "Portfolio Site",
     description:
-      "My personal portfolio showcasing my work, built with React, TailwindCSS, and Next.js.",
+      "A personal portfolio built with React, TailwindCSS, and Next.js to showcase my projects and skills.Highlights work through a clean, responsive, and modern design.",
     image: "/portfoliopic.png",
     tags: ["React", "Nextjs", "TypeScript", "TailwindCSS"],
     github: "#",
