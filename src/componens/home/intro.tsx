@@ -145,7 +145,8 @@ const Intro = () => {
                       <span className="text-purple-400">import</span>{" "}
                       <span className="text-blue-400">React</span>{" "}
                       <span className="text-purple-400">from</span>{" "}
-                      <span className="text-green-400">'react'</span>;{"\n\n"}
+                      <span className="text-green-400">&apos;react&apos;</span>;
+                      {"\n\n"}
                       <span className="text-purple-400">const</span>{" "}
                       <span className="text-yellow-400">DevWorkspace</span> = ()
                       =&gt; {"{"}

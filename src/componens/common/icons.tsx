@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 export const LogoIcon = (props: any) => {
-  const { color } = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
