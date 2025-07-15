@@ -3,7 +3,6 @@ import { FaUserAlt } from "react-icons/fa";
 import { FaCode } from "react-icons/fa6";
 
 const About = () => {
-
   const fadeRefs = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
@@ -41,8 +40,9 @@ const About = () => {
           <span className="text-green-400">{" />"}</span>
         </h2>
         <p className="mt-4 text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
-          I craft responsive, user-friendly interfaces using modern frontend technologies.
-          Passionate about clean code, performance, and seamless user experiences
+          I craft responsive, user-friendly interfaces using modern frontend
+          technologies. Passionate about clean code, performance, and seamless
+          user experiences
         </p>
       </div>
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
@@ -53,18 +53,27 @@ const About = () => {
             Who <span className="text-white font-mono text-lg">I Am</span>
           </h2>
           <p className="text-gray-400 mb-4">
-            Frontend Developer with 2 years of experience in building responsive web applications using
-            React.js and Next.js. Skilled in modern JavaScript, TypeScript, API integration, and UI development
-            with Tailwind CSS. Strong focus on performance, SEO, and clean, maintainable code.
+            Frontend Developer with 2 years of experience in building responsive
+            web applications using React.js and Next.js. Skilled in modern
+            JavaScript, TypeScript, API integration, and UI development with
+            Tailwind CSS. Strong focus on performance, SEO, and clean,
+            maintainable code.
           </p>
           <p className="text-gray-400 mb-6">
-            When I&apos;m not coding, I spend time learning new concepts, sharpening my problem-solving skills, or reading about emerging trends in tech.
+            When I&apos;m not coding, I spend time learning new concepts,
+            sharpening my problem-solving skills, or reading about emerging
+            trends in tech.
           </p>
 
-          <div className="grid grid-cols-3 gap-4 opacity-0 translate-y-10 transition-all duration-1000 ease-out " ref={addToRefs}>
+          <div
+            className="grid grid-cols-3 gap-4 opacity-0 translate-y-10 transition-all duration-1000 ease-out "
+            ref={addToRefs}
+          >
             <div className="bg-black/40 p-4 rounded-lg text-center ">
               <p className="text-green-400 text-2xl font-bold">8</p>
-              <p className="xs:text-[9px] lg:text-sm text-gray-400">Repositories</p>
+              <p className="xs:text-[9px] lg:text-sm text-gray-400">
+                Repositories
+              </p>
             </div>
             <div className="bg-black/40 p-4 rounded-lg text-center">
               <p className="text-green-400 text-2xl font-bold">1k</p>
@@ -72,7 +81,9 @@ const About = () => {
             </div>
             <div className="bg-black/40 p-4 rounded-lg text-center">
               <p className="text-green-400 text-2xl font-bold">0</p>
-              <p className="xs:text-[9px] lg:text-sm text-gray-400">PRs Merged</p>
+              <p className="xs:text-[9px] lg:text-sm text-gray-400">
+                PRs Merged
+              </p>
             </div>
           </div>
         </div>
@@ -86,15 +97,18 @@ const About = () => {
 
           {/* Skills with Progress Bars */}
           <div className="space-y-4 mb-6">
-            <SkillBar label="JavaScript (ES6+)" percent={90} />
-            <SkillBar label="React.js , Next.js" percent={85} />
-            <SkillBar label="Tailwind CSS" percent={90} />
+            <SkillBar label="JavaScript (ES6+)" percent={82} />
+            <SkillBar label="React.js , Next.js" percent={90} />
+            <SkillBar label="Tailwind CSS" percent={89} />
             <SkillBar label="Responsive Design" percent={92} />
-            <SkillBar label="Git & Version Control" percent={78} />
+            <SkillBar label="Git & Version Control" percent={80} />
           </div>
 
           {/* Tech Badges */}
-          <div className="flex flex-wrap gap-2 opacity-0 translate-y-10 transition-all duration-1000 ease-out" ref={addToRefs}>
+          <div
+            className="flex flex-wrap gap-2 opacity-0 translate-y-10 transition-all duration-1000 ease-out"
+            ref={addToRefs}
+          >
             {[
               "JavaScript",
               "React",
@@ -115,10 +129,10 @@ const About = () => {
       </div>
     </section>
   );
-}
+};
 
 // Sub-component for skill bar
-function SkillBar({ label, percent }: { label: string, percent: number }) {
+function SkillBar({ label, percent }: { label: string; percent: number }) {
   return (
     <div>
       <div className="flex justify-between mb-1">

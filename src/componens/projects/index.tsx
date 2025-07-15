@@ -10,8 +10,8 @@ const projects = [
       "An interactive e-learning platform with flexible courses, live tutor chats, and quizzes, plus community features like posts, comments, and likes for collaboration.",
     image: "/mynervapic.png",
     tags: ["React", "Nextjs", "TypeScript", "TailwindCSS"],
-    github: "#",
-    demo: "#",
+    github: "",
+    demo: "https://mynerva.in/",
   },
   {
     title: "Aroma Cooking Assistant (UI Development)",
@@ -19,8 +19,8 @@ const projects = [
       "Developed a responsive UI for Aroma, Emphasized clean design, smooth UX, and seamless user interactions.",
     image: "/aromapic.png",
     tags: ["React", "Nextjs", "TypeScript", "TailwindCSS"],
-    github: "#",
-    demo: "#",
+    github: "",
+    demo: "https://aroma.org.in/",
   },
   {
     title: "Portfolio Site",
@@ -28,7 +28,7 @@ const projects = [
       "A personal portfolio built with React, TailwindCSS, and Next.js to showcase my projects and skills.Highlights work through a clean, responsive, and modern design.",
     image: "/portfoliopic.png",
     tags: ["React", "Nextjs", "TypeScript", "TailwindCSS"],
-    github: "#",
+    github: "https://github.com/itskarishmadev/KarishmaPortfolio",
     demo: "#",
   },
 ];
@@ -78,21 +78,23 @@ const ProjectsSection = () => {
             </div>
 
             <div className="flex items-center gap-4 text-xl text-gray-300">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-green-400"
-              >
-                <FaGithub />
-              </a>
+              {project?.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-green-400"
+                >
+                  <FaGithub />
+                </a>
+              )}
               <a
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-green-400"
               >
-                <FaExternalLinkAlt />
+                <FaExternalLinkAlt size={15} />
               </a>
             </div>
           </div>
