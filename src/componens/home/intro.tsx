@@ -69,7 +69,7 @@ const Intro = () => {
                 </div>
                 <div className="p-2 flex-1 font-mono text-xs lg:text-sm overflow-hidden whitespace-pre">
                   <pre className="text-green-500 leading-relaxed">
-                    {`          _____                      ${"itskarishmadev-workspace"}
+                    {`          _____                      ${"itskarishmadev"}
          /     \\    `}
                     <span className="text-yellow-400">
                       itskarishmadev-workspace
